@@ -11,4 +11,5 @@ ADD run.sh /root/
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+ENTRYPOINT ["/bin/smell-baron"]
 CMD ["bin/bash", "/root/run.sh"]
